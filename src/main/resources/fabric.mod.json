@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "excavenchant",
+	"version": "${version}",
+	"name": "Excavation Enchant Mod",
+	"description": "Excavation enchant that lets you mine in radius!",
+	"authors": [
+		"Xantory!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/excavenchant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xantory.excavenchantmod.ExcavEnchant"
+		],
+		"fabric-datagen": [
+			"net.xantory.excavenchantmod.ExcavEnchantDataGenerator"
+		],
+		"client": [
+			"net.xantory.excavenchantmod.ExcavEnchantClient"
+		]
+	},
+	"mixins": [
+		"excavenchant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
